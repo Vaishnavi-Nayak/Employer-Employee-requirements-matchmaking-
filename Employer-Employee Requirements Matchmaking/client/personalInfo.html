@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candidate Dashboard</title>
+
+    <!--font cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!--custom css file link-->
+    <link rel="stylesheet" href="candidate_style.css" />
+  </head>
+  <body>
+    <!--header section starts-->
+    <header>
+      <div class="user">
+        <img src="images/candidate.avif" alt="cannot display img" />
+        <h3 class="name">Name</h3>
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="personalinfo">Personal Info</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="#certification">Certifications</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="#Preferences">Job Preferences</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main1">
+      <div class="register">
+          <h2>Personal Information</h2>
+          <form id="register" method="post">
+             
+              <label>Name:</label>
+              <br>
+              <input type="text" name="name" id="name" placeholder="Enter your name" required><br><br>
+              
+              <label>University seat number:</label>
+              <br>
+              <input type="text" name="place" id="place" placeholder="Enter USN" required><br><br>
+  
+              <label>Date of birth:</label>
+              <br>
+              <input type="date" name="date" id="date" placeholder="Enter DOB" required><br><br>
+  
+              <label>Gender:</label>
+              <br>
+              <input type="radio" name="gender" id="male" >&nbsp;
+              <span id="male">Male</span>
+              &nbsp;&nbsp;&nbsp;
+              <input type="radio" name="gender" id="female">&nbsp;
+              <span id="female">Female</span><br><br>
+              
+              
+  
+              <label>Email</label>
+              <br>
+              <input type="email" name="email" id="email" placeholder="Enter your email" required><br><br>
+  
+              <label>Phone Number:</label>
+              <br>
+              <input type="phone" name="phone" id="phone" placeholder="Enter Phone number" maxlength="10" ><br><br>
+              <label>Country</label>
+              <br>
+              <input type="text" name="country" id="country" placeholder="Enter your country" required><br><br>
+  
+              <label>Address</label>
+              <br>
+              <textarea id="address" name="address" rows="4" cols="4">
+
+              </textarea><br><br>
+  
+              
+              <div class="submit">
+                <a id="submit" href="">Next</a>
+                <script type="text/javascript">
+                  document.getElementById("submit").onclick = function () {};
+                </script>
+              </div>
+
+  
+  
+          </form>
+      </div>
+  </div>    
+
+    <!--header section ends-->
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!--jquery cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </body>
+</html>

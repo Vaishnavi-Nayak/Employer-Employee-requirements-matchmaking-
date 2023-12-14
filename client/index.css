@@ -216,3 +216,76 @@ header h2{
     text-decoration: underline;
 
 }
+
+
+
+/* user form */
+
+
+.main1{
+    width: 400px;
+    margin:100px auto 0px auto;
+
+
+}
+  h2{
+    text-align: center;
+    color: #ff710a;
+    font-size: 30px;
+    margin-top:20px ;
+ }
+
+ .register{
+    background-color: #0009;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    border:1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+ }
+
+ label{
+    color: white;
+    font-size: 18px;
+ }
+ span{
+    color: white;
+ }
+
+ #register{
+    margin: 40px;
+ }
+
+
+ #name{
+    width: 300px;
+    border:1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+    background: transparent;
+    border: none;
+    height: 40px;
+    border-bottom: 2px solid rgb(255, 253, 253);
+    margin: 10px 0;
+
+ }
+
+ #submit{
+    width:100%;
+    padding: 7px;
+    font-size: 16px;
+    background: #ff710a;
+    border-radius: 6px;
+    border:none;
+    cursor: pointer;
+   
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+label,span,h2{
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}

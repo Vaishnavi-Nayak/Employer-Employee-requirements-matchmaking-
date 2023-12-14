@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candidate Dashboard</title>
+
+    <!--font cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!--custom css file link-->
+    <link rel="stylesheet" href="candidate_style.css" />
+  </head>
+  <body>
+    <!--header section starts-->
+    <header>
+      <div class="user">
+        <img src="images/candidate.avif" alt="cannot display img" />
+        <h3 class="name">Name</h3>
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="personalInfo.html">Personal Info</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="certification.html">Certifications</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="Preferences.html">Job Preferences</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main1">
+      <div class="register">
+        <h2>Skills</h2>
+        <form id="register" method="post">
+          <!-- <label>Skills:</label>
+              <br>
+             <select id="degree" name="degree"  >
+                
+                <option value="d1">C</option>
+                <option value="d2">C++</option>
+                <option value="d3">Java</option>
+                <option value="d1">Python</option>
+                <option value="d1">d1</option>
+                <option value="d1">d1</option>
+             </select>
+             <br><br>
+  
+              <label>Rate your skill:</label>
+              <br>
+              <select id="degree" name="degree">
+                <option value="d1">1</option>
+                <option value="d1">2</option>
+                <option value="d1">3</option>
+                <option value="d1">4</option>
+                <option value="d1">5</option>
+               
+             </select> -->
+          <br /><br />
+
+          <label>Technical Skill-1:</label>
+          <br />
+
+          <input
+            type="text"
+            id="skills"
+            name="skills"
+            placeholder="enter skills"
+          />
+
+          <!-- <div class="slidecontainer">
+              <input type="range" min="1" max="10" value="10" class="slider" id="myRange">
+              <p>Value: <span id="demo"></span></p>
+            </div> -->
+
+          <div class="rating-container">
+            <p>rate your skill:</p>
+
+            <div id="stars" class="stars">
+              <span class="star" data-value="1">&#9733;</span>
+              <span class="star" data-value="2">&#9733;</span>
+              <span class="star" data-value="3">&#9733;</span>
+              <span class="star" data-value="4">&#9733;</span>
+              <span class="star" data-value="5">&#9733;</span>
+            </div>
+
+            <p id="selected-rating">
+              Selected rating: <span id="rating-value">0</span>
+            </p>
+          </div>
+          <br><br>
+
+          <label>Technical Skill-2:</label>
+          <br />
+
+          <input
+            type="text"
+            id="skills"
+            name="skills"
+            placeholder="enter skills"
+          />
+
+          <!-- <div class="slidecontainer">
+              <input type="range" min="1" max="10" value="10" class="slider" id="myRange">
+              <p>Value: <span id="demo"></span></p>
+            </div> -->
+
+          <div class="rating-container">
+            <p>rate your skill:</p>
+
+            <div id="stars1" class="stars1">
+              <span class="star1" data-value="1">&#9733;</span>
+              <span class="star1" data-value="2">&#9733;</span>
+              <span class="star1" data-value="3">&#9733;</span>
+              <span class="star1" data-value="4">&#9733;</span>
+              <span class="star1" data-value="5">&#9733;</span>
+            </div>
+
+            <p id="selected-rating1">
+              Selected rating: <span id="rating-value1">0</span>
+            </p>
+          </div>
+          <br><br>
+
+
+
+          <label>Technical Skill-3:</label>
+          <br />
+
+          <input
+            type="text"
+            id="skills"
+            name="skills"
+            placeholder="enter skills"
+          />
+
+          <!-- <div class="slidecontainer">
+              <input type="range" min="1" max="10" value="10" class="slider" id="myRange">
+              <p>Value: <span id="demo"></span></p>
+            </div> -->
+
+          <div class="rating-container">
+            <p>rate your skill:</p>
+
+            <div id="stars" class="stars">
+              <span class="star" data-value="1">&#9733;</span>
+              <span class="star" data-value="2">&#9733;</span>
+              <span class="star" data-value="3">&#9733;</span>
+              <span class="star" data-value="4">&#9733;</span>
+              <span class="star" data-value="5">&#9733;</span>
+            </div>
+
+            <p id="selected-rating">
+              Selected rating: <span id="rating-value">0</span>
+            </p>
+          </div>
+          <br><br>
+
+
+          <label>Technical Skill-4:</label>
+          <br />
+
+          <input
+            type="text"
+            id="skills"
+            name="skills"
+            placeholder="enter skills"
+          />
+
+          <!-- <div class="slidecontainer">
+              <input type="range" min="1" max="10" value="10" class="slider" id="myRange">
+              <p>Value: <span id="demo"></span></p>
+            </div> -->
+
+          <div class="rating-container">
+            <p>rate your skill:</p>
+
+            <div id="stars" class="stars">
+              <span class="star" data-value="1">&#9733;</span>
+              <span class="star" data-value="2">&#9733;</span>
+              <span class="star" data-value="3">&#9733;</span>
+              <span class="star" data-value="4">&#9733;</span>
+              <span class="star" data-value="5">&#9733;</span>
+            </div>
+
+            <p id="selected-rating">
+              Selected rating: <span id="rating-value">0</span>
+            </p>
+          </div>
+          <br><br>
+
+
+
+          <label>Known Languages:</label>
+          <br />
+          <input type="checkbox" name="lang" id="english" />&nbsp;
+          <span id="english">English</span>
+          &nbsp;&nbsp;&nbsp;
+          <input type="checkbox" name="lang" id="hindi" />&nbsp;
+          <span id="hindi">Hindi</span>
+          &nbsp;&nbsp;&nbsp;
+          <input type="checkbox" name="lang" id="kannada" />&nbsp;
+          <span id="kannada">Kannada</span>
+          &nbsp;&nbsp;&nbsp;
+          <br /><br />
+
+          <a id="submit" href="preferences.html">Next</a>
+          <script type="text/javascript">
+            document.getElementById("submit").onclick = function () {};
+          </script>
+        </form>
+      </div>
+    </div>
+
+    <!--header section ends-->
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!--jquery cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value;
+      
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
+      </script> -->
+
+      <script>
+        const stars = document.querySelectorAll('.star');
+        const ratingValue = document.getElementById('rating-value');
+        const selectedRating = document.getElementById('selected-rating');
+      
+        stars.forEach(star => {
+          star.addEventListener('click', () => {
+            const value = star.dataset.value;
+            ratingValue.textContent = value;
+            selectedRating.style.display = 'block';
+      
+            // Mark all stars up to the clicked one as selected
+            stars.forEach(innerStar => {
+              innerStar.classList.remove('active');
+              if (innerStar.dataset.value <= value) {
+                innerStar.classList.add('active');
+              }
+            });
+          });
+         });
+
+         const stars1 = document.querySelectorAll('.star1');
+         const ratingValue1 = document.getElementById('rating-value1');
+         const selectedRating1 = document.getElementById('selected-rating1');
+       
+         stars1.forEach(star1 => {
+           star1.addEventListener('click', () => {
+             const value = star1.dataset.value;
+             ratingValue1.textContent = value;
+             selectedRating1.style.display = 'block';
+       
+             // Mark all stars up to the clicked one as selected
+             stars1.forEach(innerStar => {
+               innerStar.classList.remove('active');
+               if (innerStar.dataset.value <= value) {
+                 innerStar.classList.add('active');
+               }
+             });
+           });
+          });
+ 
+
+       
+      </script>
+  </body>
+</html>

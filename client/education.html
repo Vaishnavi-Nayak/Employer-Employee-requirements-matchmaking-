@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candidate Dashboard</title>
+
+    <!--font cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!--custom css file link-->
+    <link rel="stylesheet" href="candidate_style.css" />
+  </head>
+  <body>
+    <!--header section starts-->
+    <header>
+      <div class="user">
+        <img src="images/candidate.avif" alt="cannot display img" />
+        <h3 class="name">Name</h3>
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="personalInfo.html">Personal Info</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="certification.html">Certifications</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="#Preferences">Job Preferences</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main1">
+      <div class="register">
+          <h2>Education</h2>
+          <form id="register" method="post">
+             
+              <label>School Name-X:</label>
+              <br>
+              <input type="text" name="name" id="name" placeholder=" enter school name"><br><br>
+              
+              <label>X percentage %:</label>
+              <br>
+              <input type="number" name="number" id="number" placeholder="Enter percentage"><br><br>
+  
+              <label>Place</label>
+              <br>
+              <input type="text" name="name" id="place" placeholder=" enter place"><br><br>
+              <label>PU college</label>
+              <br>
+              <input type="text" name="name" id="name" placeholder="Enter college name"><br><br>
+  
+              <label>PU percentage %:</label>
+              <br>
+              <input type="number" name="number" id="number" placeholder="Enter percentage"><br><br>
+              <label>Place</label>
+              <br>
+              <input type="text" name="name" id="place" placeholder=" enter place"><br><br>
+
+
+            
+              <label>Degree:</label>
+              <br>
+             <select id="degree" name="degree">
+                <option value="d1">d1</option>
+                <option value="d1">d1</option>
+                <option value="d1">d1</option>
+                <option value="d1">d1</option>
+                <option value="d1">d1</option>
+                <option value="d1">d1</option>
+             </select>
+             <br><br>
+  
+              <label>Stream:</label>
+              <br>
+              <select id="degree" name="degree">
+                <option value="d1">d1</option>
+                <option value="d1">d1</option>
+                <option value="d1">d1</option>
+                <option value="d1">d1</option>
+                <option value="d1">d1</option>
+                <option value="d1">d1</option>
+             </select>
+             <br><br>
+              
+             <label>Degree CGPA:</label>
+              <br>
+              
+                <input type="number" name="number" id="number" placeholder="Enter CGPA"><br><br>
+                
+                
+                
+         
+             
+                <label>Passout Year:</label>
+                <br>
+                <select id="number" name="number">
+                    <option value="d1">2021</option>
+                    <option value="d2">2022</option>
+                    <option value="d3">2023</option>
+                    <option value="d4">2024</option>
+                    <option value="d1">2025</option>
+                    <option value="d1">2026</option>
+                 </select>
+                <br><br>
+
+                <label>Place</label>
+              <br>
+              <input type="text" name="name" id="place" placeholder=" enter place"><br><br>
+
+
+              <a id="submit" href="certification.html">Next</a>
+              <script type="text/javascript">
+                  document.getElementById("submit").onclick = function () {
+                     ;
+                  };
+                </script>
+
+                
+              
+  
+              
+  
+  
+  
+          </form>
+      </div>
+  </div>    
+
+    <!--header section ends-->
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!--jquery cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </body>
+</html>

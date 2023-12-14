@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candidate Dashboard</title>
+
+    <!--font cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!--custom css file link-->
+    <link rel="stylesheet" href="/client/candidate_style.css" />
+  </head>
+  <body>
+    <!--header section starts-->
+    <header>
+      <div class="user">
+        <img src="images/candidate.avif" alt="cannot display img" />
+        <h3 class="name">Name</h3>
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="details.html">Details</a></li>
+          <li><a href="results.html">Results</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main1">
+      <div class="register">
+        <h2>Details</h2>
+        <form id="register" method="post">
+          <label>Name:</label>
+          <br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          /><br /><br />
+
+          <label>Name of the company: </label>
+          <br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter name of the company"
+            required
+          /><br /><br />
+
+          <label>Job title:</label>
+          <br />
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Enter job title"
+            required
+          /><br /><br />
+
+          <label>Salary:</label>
+          <br />
+          <input
+            type="number"
+            name="number"
+            id="number"
+            placeholder="Enter the salary"
+            required
+          /><br /><br />
+
+          <div>
+            <div class="row d-flex justify-content-center">
+            <label class="col-3">Technical skills:</label>
+            <select id="inputGroupSelect04" placeholder="skills  " multiple>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                    <option value="PHP">PHP</option>
+                    <option value="JS">JavaScript</option>
+                    <option value="SQL">SQL</option>
+                </select>
+            </div>
+            </div>
+            <br><br>
+
+            <div>
+                <div class="row d-flex justify-content-center">
+                <label class="col-3">Soft skills:</label>
+                <select id="inputGroupSelect04" placeholder="skills  " multiple>
+                        <option value="C">Communication</option>
+                        <option value="C++">C++</option>
+                        <option value="Java">Java</option>
+                        <option value="Python">Python</option>
+                        <option value="PHP">PHP</option>
+                        <option value="JS">JavaScript</option>
+                        <option value="SQL">SQL</option>
+                    </select>
+                </div>
+                </div>
+                <br><br>
+
+          <label>Minimum Years of experience</label>
+          <br />
+          <input
+            type="number"
+            name="number"
+            id="number"
+            placeholder="Enter"
+            required
+          /><br /><br />
+
+          <label>Mandatory and required certifications</label>
+          <br />
+          <input
+            type="text"
+            name="text"
+            id="text"
+            placeholder="Enter certifications"
+            required
+          /><br /><br />
+
+          
+
+          <label>Location Preferences</label>
+          <br />
+          <input
+            type="text"
+            name="location"
+            id="location"
+            placeholder="Enter Location"
+            required
+          /><br /><br />
+         <div class="submit">
+          <a id="submit" href="">Submit</a>
+          <script type="text/javascript">
+            document.getElementById("submit").onclick = function () {};
+          </script>
+        </div>
+        </form>
+      </div>
+    </div>
+
+    <!--header section ends-->
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!--jquery cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            var multipleSelectDropdown = new Choices('#inputGroupSelect04', {
+               removeItemButton: true
+             }); 
+            
+            
+        });
+    </script>
+
+  </body>
+</html>

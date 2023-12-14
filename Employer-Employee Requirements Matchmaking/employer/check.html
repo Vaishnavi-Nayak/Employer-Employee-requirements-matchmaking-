@@ -1,0 +1,205 @@
+<div class="row justify-content-center">
+  <div
+    class="col-md-8 col-lg-5 d-flex justify-content-center align-items-center"
+  >
+    <div class="d-flex text-left align-items-center w-100">
+      <strong class="sl">Select Language:</strong>
+      <select
+        id="multiple-checkboxes"
+        multiple="multiple"
+        style="display: none"
+      >
+        <option value="php">PHP</option>
+        <option value="javascript">JavaScript</option>
+        <option value="java">Java</option>
+        <option value="sql">SQL</option>
+        <option value="jquery">Jquery</option>
+        <option value=".net">.Net</option>
+      </select>
+      <div class="btn-group show">
+        <button
+          type="button"
+          class="multiselect dropdown-toggle btn btn-default"
+          data-toggle="dropdown"
+          title="None selected"
+          aria-expanded="true"
+        >
+          <span class="multiselect-selected-text">None selected</span>
+          <b class="caret"></b>
+        </button>
+        <ul
+          class="multiselect-container dropdown-menu show"
+          x-placement="bottom-start"
+          style="
+            position: absolute;
+            will-change: transform;
+            top: 0px;
+            left: 0px;
+            transform: translate3d(0px, 52px, 0px);
+          "
+        >
+          <li class="multiselect-item multiselect-all">
+            <a tabindex="0" class="multiselect-all"
+              ><label class="checkbox"
+                ><input type="checkbox" value="multiselect-all" /> Select
+                all</label
+              ></a
+            >
+          </li>
+          <li>
+            <a tabindex="0"
+              ><label class="checkbox"
+                ><input type="checkbox" value="php" /> PHP</label
+              ></a
+            >
+          </li>
+          <li>
+            <a tabindex="0"
+              ><label class="checkbox"
+                ><input type="checkbox" value="javascript" /> JavaScript</label
+              ></a
+            >
+          </li>
+          <li>
+            <a tabindex="0"
+              ><label class="checkbox"
+                ><input type="checkbox" value="java" /> Java</label
+              ></a
+            >
+          </li>
+          <li>
+            <a tabindex="0"
+              ><label class="checkbox"
+                ><input type="checkbox" value="sql" /> SQL</label
+              ></a
+            >
+          </li>
+          <li>
+            <a tabindex="0"
+              ><label class="checkbox"
+                ><input type="checkbox" value="jquery" /> Jquery</label
+              ></a
+            >
+          </li>
+          <li>
+            <a tabindex="0"
+              ><label class="checkbox"
+                ><input type="checkbox" value=".net" /> .Net</label
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-multiselect.js"></script>
+<script src="js/main.js"></script>
+<script
+  defer=""
+  src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+  integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+  data-cf-beacon='{"rayId":"834508761f217a00","version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
+  crossorigin="anonymous"
+></script>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rate Your Skill</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .rating-container {
+        text-align: center;
+      }
+
+      .star {
+        font-size: 24px;
+        color: #ccc;
+        cursor: pointer;
+      }
+
+      .star:hover,
+      .star.active {
+        color: #ffcc00;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rating-container">
+      <h1>Rate Your Skill</h1>
+      <p>Click on a star to rate your skill:</p>
+
+      <div id="stars" class="stars">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+      </div>
+
+      <p id="selected-rating">
+        Selected rating: <span id="rating-value">0</span>
+      </p>
+    </div>
+
+    <script>
+      const stars = document.querySelectorAll(".star");
+      const ratingValue = document.getElementById("rating-value");
+      const selectedRating = document.getElementById("selected-rating");
+
+      stars.forEach((star) => {
+        star.addEventListener("click", () => {
+          const value = star.dataset.value;
+          ratingValue.textContent = value;
+          selectedRating.style.display = "block";
+        });
+
+        star.addEventListener("mouseover", () => {
+          stars.forEach((innerStar) => {
+            if (innerStar.dataset.value <= star.dataset.value) {
+              innerStar.classList.add("active");
+            } else {
+              innerStar.classList.remove("active");
+            }
+          });
+        });
+
+        star.addEventListener("mouseout", () => {
+          stars.forEach((innerStar) => {
+            innerStar.classList.remove("active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
+
+const stars = document.querySelectorAll('.star'); const ratingValue =
+document.getElementById('rating-value'); const selectedRating =
+document.getElementById('selected-rating'); stars.forEach(star => {
+star.addEventListener('click', () => { const value = star.dataset.value;
+ratingValue.textContent = value; selectedRating.style.display = 'block'; // Mark
+all stars up to the clicked one as selected stars.forEach(innerStar => {
+innerStar.classList.remove('active'); if (innerStar.dataset.value <= value) {
+innerStar.classList.add('active'); } }); }); star.addEventListener('mouseover',
+() => { stars.forEach(innerStar => { if (!innerStar.classList.contains('active')
+&& innerStar.dataset.value <= star.dataset.value) {
+innerStar.classList.add('active'); } }); }); star.addEventListener('mouseout',
+() => { if (star.classList.contains('active')) return; stars.forEach(innerStar
+=> { innerStar.classList.remove('active'); }); }); });
