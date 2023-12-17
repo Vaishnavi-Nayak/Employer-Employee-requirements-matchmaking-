@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&family=Nunito:wght@200;300;400;600&display=swap");
+
+:root {
+  --orange: #ff710a;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  
+  transition: all 0.2s linear;
+}
+
+*::selection {
+  background: var(--orange);
+  color: #333;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #222;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--orange);
+}
+
+body {
+  background: #111;
+  overflow-x: hidden;
+  padding-left: 35rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 35rem;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+}
+
+header .user img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 0.4rem solid var(--orange);
+}
+
+header .user .name {
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+
+header .navbar {
+  width: 100%;
+}
+
+header .navbar ul {
+  list-style: none;
+  padding: 1rem 3rem;
+}
+
+header .navbar ul li a {
+  display: block;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background: #333;
+  color: #fff;
+  font-size: 2rem;
+}
+
+header .navbar ul li a:hover {
+  background: var(--orange);
+}
+
+#menu {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  display: none;
+}
+
+
+
+/* form */
+
+
+.main1{
+    width: 400px;
+    margin:100px auto 0px auto;
+
+
+}
+  h2{
+    text-align: center;
+    color: #ff710a;
+    font-size: 30px;
+    margin-top:20px ;
+ }
+
+ .register{
+    background-color: #0009;
+    width: fit-content;
+    font-size: 18px;
+    border-radius: 10px;
+    border:1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+ }
+
+ label{
+    color: white;
+    font-size: 18px;
+ }
+ span{
+    color: white;
+ }
+
+ #register{
+    margin: 40px;
+ }
+
+
+ #name,#place,#date,#email,#number,#country,#address,#degree,#phone,#title,#location,#text{
+    width: 300px;
+    border:1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+   
+    height: 40px;
+    border-bottom: 2px solid rgb(255, 253, 253);
+    margin: 10px 0;
+
+ }
+
+ #skills{
+  width: 150px;
+  border:1px solid #ddd;
+  border-radius: 3px;
+  outline: 0;
+  padding: 7px;
+
+ }
+
+
+ #select{
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #e9e7e7;
+ }
+
+
+ /* #submit{
+   
+    color: rgb(255, 255, 255);
+    background-color: #ff710a ;
+    
+
+} */
+
+.submit{
+  width:100px;
+  padding: 7px;
+  font-size: 16px;
+  background:  #ff710a;
+  border-radius: 6px;
+  border:none;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  color: rgb(255, 255, 255);
+  display: flex;
+  margin-left: 30%;
+  justify-content: center;
+}
+
+.slidecontainer{
+  margin-left: 55%;
+  margin-top: -10%;
+  
+
+}
+
+.slidecontainer p{
+  color: #fff;
+}
+
+
+label,span,h2{
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+/* star */
+.rating-container p {
+  color: #ddd;
+  
+}
+
+.rating-container{
+  margin-left: 50%;
+  margin-top: -19%;
+}
+
+.star {
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+ 
+}
+
+.star:hover,
+.star.active {
+  color: #ffcc00;
+}
+
+
+
+
+.register1{
+  background-color: #0009;
+  width: fit-content;
+  height: fit-content;
+  font-size: 18px;
+  border-radius: 10px;
+  border:1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content:left;
+  
+}
+
+.right {
+  margin-top: 100px;
+}
+
+.left{
+  margin-top: 100px;
+}
+

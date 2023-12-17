@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candidate Dashboard</title>
+
+    <!--font cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!--custom css file link-->
+    <link rel="stylesheet" href="candidate_style.css" />
+  </head>
+  <body>
+    <!--header section starts-->
+    <header>
+      <div class="user">
+        <img src="../images/candidate.avif" alt="cannot display img" />
+        <h3 class="name">Name</h3>
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="personalInfo.html">Personal Info</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="certification.html">Certifications</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="Preferences.html">Job Preferences</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main1">
+      <div class="register">
+        <h2>Certifications and Projects</h2>
+        <form id="register" action="certification.php" method="POST">
+          <label>Certification 1:</label>
+          <br />
+          <input
+            type="text"
+            name="c1"
+            id="name"
+            placeholder=" enter 1 certification"
+          /><br /><br />
+
+          <label>Certification 2:</label>
+          <br />
+          <input
+            type="text"
+            name="c2"
+            id="name"
+            placeholder=" enter 1 certification"
+          /><br /><br />
+
+          <label>Certification 3:</label>
+          <br />
+          <input
+            type="text"
+            name="c3"
+            id="name"
+            placeholder=" enter 1 certification"
+          /><br /><br />
+
+          <label>Project 1:</label>
+          <br />
+          <input
+            type="text"
+            name="p1"
+            id="name"
+            placeholder=" enter 1 project"
+          /><br /><br />
+
+          <label>Project 2:</label>
+          <br />
+          <input
+            type="text"
+            name="p2"
+            id="name"
+            placeholder="  enter 1 project"
+          /><br /><br />
+
+          <label>Project 3:</label>
+          <br />
+          <input
+            type="text"
+            name="p3"
+            id="name"
+            placeholder="  enter 1 project"
+          /><br /><br />
+
+          <button type="submit" class="submit" href="">Submit</button>
+          <script type="text/javascript">
+            document.getElementById("submit").onclick = function () {};
+          </script>
+        </form>
+      </div>
+    </div>
+
+    <!--header section ends-->
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!--jquery cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </body>
+</html>

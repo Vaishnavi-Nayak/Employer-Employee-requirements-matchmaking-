@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,6 +35,7 @@
           <li><a href="#certification">Certifications</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#Preferences">Job Preferences</a></li>
+          <a href="EmployeeLogout.php">Logout</a>
         </ul>
       </nav>
     </header>

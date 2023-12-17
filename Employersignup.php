@@ -1,13 +1,5 @@
 <?php
 
-    
-
-   
-    
-    // $hashedPassword = password_hash($_POST['password'], PASSWORD_DEFAULT);
-
-
-
     $servername="localhost";
     $username="root";
     $pass="";
@@ -23,13 +15,12 @@
       $email=$_POST['email'];
       $password=$_POST['password'];
       
-      $sql="insert into employeesignup(email,password) values('$email','$password'); ";
+      $sql="insert into employersignup(email,password) values('$email','$password'); ";
       
       try{
         if($conn->query($sql)==true)
         {
-         
-          // echo "<script>window.location.assign('EmployeeLogin.html');</script>";
+          // echo "<script>window.location.assign('EmployerLogin.html');</script>";
           echo "<script>alert('Signup successfull');</script>";
           $insert=true;
         }
